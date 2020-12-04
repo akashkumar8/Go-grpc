@@ -1,0 +1,11 @@
+syntax = "proto3";
+package communicate;
+
+message Message {
+    string body = 1;
+
+}
+
+service CommunicateServices {
+    rpc HeyyFolks(Message) returns (Message) {}
+}
